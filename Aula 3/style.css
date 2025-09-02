@@ -1,0 +1,76 @@
+body{
+    background-color:lightgray;
+}
+
+.imagemc{
+    height: 170px;
+    width: 170px;
+}
+.imagemj{
+    height: 170px;
+    width: 170px;
+}
+.imagemht{
+    height: 80px;
+    width: 80px;
+}
+.imagemcss{
+    height:80px;
+    width: 80px;    
+}
+.imgbook1{
+    height: 230px;
+    width: 150px;
+}
+.imgbook2{
+    height: 230px;
+    width: 190px;
+}
+.imgbook3{
+    height: 230px;
+    width: 150px;
+}
+
+
+
+
+.divInit{
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    border-style: solid;
+    border-color: rgb(1, 1, 83);
+
+}
+.ctexto{
+    color: rgb(15, 121, 1);
+}
+
+.itens{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(86, 192, 253);
+    
+}
+
+.txtint{
+text-align: center;
+}
+.imgbooks{
+    justify-content: space-evenly;
+    image-orientation: center;
+}
+
+.divtxt2{
+    color: purple;
+}
+.divyt{
+    justify-content: space-evenly;
+    display: flex;
+    image-orientation: center;
+}
+.divmaps{
+    justify-content: space-evenly;
+    display: flex;
+    image-orientation: center;
+}
