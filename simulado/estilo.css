@@ -1,0 +1,30 @@
+.intro{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: gray;
+
+}
+.linksite{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    
+}
+.txtfestival{
+    color: red;
+    text-align: center;}
+
+.imgetxt{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+.imgcarro{
+    display: flex;
+    
+}
+.txtmotorista{
+    display: flex;
+    font-size: 16px;}
