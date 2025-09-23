@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Habitantes</title>
+</head>
+<body>
+    <h1> Prompt exercicio</h1>
+  <script>
+    let totalSalario = 0;
+    let contador = 0;
+    let maiorIdade = -Infinity;
+    let menorIdade = Infinity;
+    let mulheresComSalarioAte5000 = 0;
+
+    while (true) {
+      let idade = parseInt(prompt("Digite a idade (idade negativa para encerrar):"));
+      if (idade < 0) break;
+
+      let sexo = prompt("Digite o sexo (M/F):").toUpperCase();
+      let salario = parseFloat(prompt("Digite o salário:"));
+
+      // Atualiza dados
+      totalSalario += salario;
+      contador++;
+
+      if (idade > maiorIdade) maiorIdade = idade;
+      if (idade < menorIdade) menorIdade = idade;
+
+      if (sexo === "F" && salario >= 5000) {
+        mulheresComSalarioAte5000++;
+      }
+    }
+
+    if (contador > 0) {
+      let mediaSalario = totalSalario / contador;
+
+      alert("Resultados da pesquisa:\n" +
+        "Média salarial: R$" + mediaSalario.toFixed(2) + "\n" +
+        "Maior idade: " + maiorIdade + "\n" +
+        "Menor idade: " + menorIdade + "\n" +
+        "Mulheres com salário até R$5000,00: " + mulheresComSalarioAte5000);
+    } else {
+      alert("Nenhum dado foi inserido.");
+    }
+  </script>
+</body>
+</html>
